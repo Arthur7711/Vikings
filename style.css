@@ -1,0 +1,132 @@
+/* @import url("https://fonts.googleapis.com/css2?family=Mate+SC&family=Pacifico&display=swap"); */
+/* @import url("https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&family=Mate+SC&display=swap"); */
+@import url("https://fonts.googleapis.com/css2?family=ZCOOL+KuaiLe&display=Mate+SC&display=swap");
+/* @import url('https://fonts.googleapis.com/css2?family=ZCOOL+KuaiLe&display=swap'); */
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  display: grid;
+  grid-template-areas:
+    "h h"
+    "n m";
+  grid-template-rows: 60px 1fr;
+  grid-template-columns: 2fr 10fr;
+  grid-gap: 10px;
+}
+
+header {
+  grid-area: h;
+  background-color: black;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+header .logo {
+  cursor: pointer;
+}
+header .headBtn {
+  border-radius: 5px;
+  padding: 3px;
+  cursor: pointer;
+}
+
+header .headBtn b a {
+  text-decoration: none;
+  font-size: 20px;
+  color: #fff;
+}
+header .search {
+  display: grid;
+  grid-template-columns: 93% 7%;
+}
+header .search input {
+  height: 25px;
+  border-radius: 5px;
+}
+header .search img {
+  margin-top: 5px;
+  cursor: pointer;
+}
+header .headBtn:hover {
+  background-color: white;
+  transition: 0.5s;
+}
+header .headBtn:hover b a {
+  color: black;
+  transition: 0.5s;
+}
+nav {
+  grid-area: n;
+  background-color: black;
+  height: 700px;
+  display: table;
+}
+
+nav .navBtn {
+  margin-top: 15px;
+  padding: 3px 0 0 10px;
+  cursor: pointer;
+}
+nav .navBtn b a {
+  text-decoration: none;
+  font-size: 25px;
+  color: white;
+}
+nav .navBtn:hover {
+  background-color: white;
+  transition: 0.5s;
+}
+nav .navBtn:hover b a {
+  color: black;
+  transition: 0.5s;
+}
+
+main {
+  grid-area: m;
+  background-image: url(img/fire.jpg);
+  background-size: cover;
+}
+main .forB {
+  margin: 50px 0 0 30px;
+}
+main .forB .spn {
+  margin: 0 0 0 130px;
+}
+main p {
+  font-family: "Mate SC", serif;
+  font-size: 40px;
+  color: rgb(175, 169, 169);
+}
+main p .span1 {
+  font-family: "ZCOOL KuaiLe", cursive;
+  color: red;
+  margin: 0 0 0 230px;
+}
+main .read {
+  cursor: pointer;
+  margin: 16% 0 0 80%;
+}
+main .read strong {
+  border: 2px solid #fff;
+  border-radius: 5px;
+  padding: 15px;
+}
+main .read strong a {
+  font-size: 25px;
+  text-decoration: none;
+  color: #fff;
+}
+main .read strong:hover {
+  color: #000;
+  background-color: #fff;
+  box-shadow: 0 0 0 5px #fff, 0 0 0 10px #fff, 0 0 0 15px #fff, 0 0 0 20px #fff;
+  opacity: 0.7;
+  transition: 0.5s;
+}
+main .read strong:hover a {
+  color: #000;
+  transition: 0.5s;
+}
+
