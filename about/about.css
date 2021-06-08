@@ -85,6 +85,9 @@ main {
   color: #fff;
   background-color: black;
 }
+main .valh img{
+  max-width: 1250px;
+}
 main h1,
 main h2 {
   margin: 3% 0 3%;
