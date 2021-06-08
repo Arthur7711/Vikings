@@ -12,7 +12,6 @@ body {
   grid-template-rows: 65px 1fr;
   grid-template-columns: 2fr 10fr;
   grid-gap: 10px;
-  /* font-family: "Quicksand", sans-serif; */
 }
 
 header {
@@ -82,67 +81,57 @@ nav .navBtn:hover b a {
   transition: 0.5s;
 }
 
-.main1 {
-  height: 90vh;
+.container {
   grid-area: m;
-  background-image: url(img/fire.jpg);
-  background-size: cover;
-}
-.main1 .forB {
-  margin: 50px 0 0 30px;
-}
-.main1 .forB .spn {
-  margin: 0 0 0 130px;
-}
-.main1 .forB p {
-  font-family: "Mate SC", serif;
-  font-size: 40px;
-  color: rgb(175, 169, 169);
-}
-.main1 p .span1 {
-  font-family: "ZCOOL KuaiLe", cursive;
-  color: red;
-  margin: 0 0 0 230px;
-}
-.main1 .read {
-  cursor: pointer;
-  margin: 16% 0 0 80%;
-}
-.main1 .read strong {
-  border: 2px solid #fff;
-  border-radius: 5px;
-  padding: 15px;
-}
-.main1 .read strong a {
-  font-size: 25px;
-  text-decoration: none;
-  color: #fff;
-}
-.main1 .read strong:hover {
-  color: #000;
-  background-color: #fff;
-  box-shadow: 0 0 0 5px #fff, 0 0 0 10px #fff, 0 0 0 15px #fff, 0 0 0 20px #fff;
-  opacity: 0.7;
-  transition: 0.5s;
-}
-.main1 .read strong:hover a {
-  color: #000;
-  transition: 0.5s;
-}
-.main1 .text {
-  margin: 10% 3% 3% 5%;
-}
-.main1 .text h1 {
-  color: #fff;
+  background-color: black;
+  max-width: 1300px;
   display: flex;
-  justify-content: center;
-  margin: 10% 0 3% 0;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
-.main1 .text p {
-  color: #fff;
-  font-size: 18px;
-  padding: 0 5% 0 5%;
+.card {
+  margin: 10px auto;
+  position: relative;
+  margin: 20px 0;
+  width: 300px;
+  height: 400px;
+  background: #fff;
+  transform-style: preserve-3d;
+  transform: perspective(2000px);
+  transition: 1s;
+  box-shadow: inset 300px 0 50px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
 }
-.main1 .text p strong {
-  color: red;
+.card:hover {
+  z-index: 1000;
+  transform: perspective(2000px) rotate(-10deg);
+  box-shadow: inset 20px 0 50px rgba(0, 0, 0, 0.5);
+}
+.card .imgBox {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border: 1px solid #000;
+  box-sizing: border-box;
+  transform-origin: left;
+  z-index: 1;
+  transition: 1s;
+}
+.card:hover .imgBox {
+  transform: rotateY(-135deg);
+}
+.card .imgBox img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.card .details {
+  position: absolute;
+  top: 0;
+  left: 0;
+  box-sizing: border-box;
+  padding: 20px;
 }
