@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" type="text/css" href="contactUs.css" />
+</head>
+<body>
+    <header >
+		<div class="logo">
+			<img src="../img/logo.png" alt="logo" height="50px" />
+		</div>
+		
+		<div class="headBtn">
+			<b>
+				<a href='#home'>Home</a>
+			</b>
+		</div>
+		<div class="headBtn">
+			<b>
+				<a href='#'>Seasons</a>
+			</b>
+		</div>
+		<div class="headBtn">
+			<b>
+				<a href='#'>Episodes</a>
+			</b>
+		</div>
+		<div class="headBtn">
+			<b>
+				<a href='#'>About</a>
+			</b>
+		</div>
+		<div class="headBtn">
+			<b>
+				<a href='#'>Contact Us</a>
+			</b>
+		</div>
+		
+		<div class="search">
+			<form action="">
+				<input type="text" placeholder="Search..."/>
+			</form>
+			<div>
+				<img  width="18px" src="../img/search.png" />
+			</div>
+		</div>
+	</header>
+	<nav>
+        
+		<div class = "navBtn">
+			<b>
+				<a href="#">Songs</a>
+			</b>
+		</div>
+		<div class = "navBtn">
+			<b> 
+				<a href="#">Persons</a>
+			</b>
+		</div>
+		<div class = "navBtn">
+			<b> 
+				<a href="#">Photos</a>
+			</b>
+		</div>
+		<div class = "navBtn">
+			<b> 
+				<a href="#">Games</a>
+			</b>
+		</div>
+	</nav>
+    <main>
+        <form action="/action_page.php">
+            <label >Your name:
+            <input class="inp" type="text"  name="yourName" placeholder="Your Name"></label><br><br/>
+            <label >Your email:
+            <input class="inp" type="text"  name="email" placeholder="Your Email"></label><br><br>            
+            <label>
+                <b>
+                    Male:
+                </b>
+                <input type="radio" id="male" name="gender"  />
+            </label>&nbsp; &nbsp; &nbsp;
+            <label>
+                <b>
+                    Female:
+                </b>
+                <input id="female" type="radio" name="gender"  />
+            </label><br/><br/>
+            <label>
+                <textarea name="comment" placeholder="please write your comment" id="" cols="30" rows="10"></textarea>
+            </label><br/><br/>
+            <button type="submit"><b>Submit</b></button>
+        </form>
+    </main>
+</body>
+</html>
