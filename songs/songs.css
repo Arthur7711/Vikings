@@ -82,7 +82,7 @@ nav .navBtn:hover b a {
 }
 main {
   grid-area: m;
-  background-image: url(../img/forSongs.png);
+  background: black;
   display: grid;
   grid-template-columns: 6fr 6fr;
 }
