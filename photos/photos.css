@@ -81,6 +81,25 @@ nav .navBtn:hover b a {
   transition: 0.5s;
 }
 
-.main1 {
-    grid-area: m;
+main {
+  grid-area: m;
+  padding: 5%;
+  background: url(../img/ph.jpg);
+  background-repeat: round;
+}
+
+
+main img {
+  width: 200px;
+  height: 200px;
+  cursor: pointer;
+  opacity: 0.8;
+  transition: 1s;
+}
+
+main img:hover {
+  height: 500px;
+  width: 500px;
+  opacity: 1;
+  
 }
