@@ -108,7 +108,7 @@ main .season h2 {
   display: flex;
   justify-content: center;
 }
-@media (max-width: 1150px) {
+@media (max-width: 1024px) {
   main .season img {
     width: 250px;
     height: 250px;
@@ -124,14 +124,14 @@ main .season h2 {
     height: 300px;
   }
 }
-@media (max-width: 765px) {
+@media (max-width: 768px) {
   main {
     display: grid;
     grid-template-columns: 50% 50%;
   }
   main .season img {
-    width: 250px;
-    height: 250px;
+    width: 280px;
+    height: 280px;
   }
 }
 @media (max-width: 430px) {

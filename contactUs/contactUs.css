@@ -86,7 +86,7 @@ main {
   background-color: black;
   background: url(../img/phone.jpg);
   background-repeat: round;
-  /* padding: 5% 0 0 5%; */
+  padding: 3% 0 0 3%;
 }
 main .inp {
   min-width: 300px;

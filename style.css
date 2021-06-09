@@ -147,7 +147,7 @@ nav .navBtn:hover b a {
   color: red;
 }
 
-@media (max-width: 1000px) {  
+@media (max-width: 1024px) {  
   .main1 .read strong {
     border: 2px solid #fff;
     border-radius: 5px;
@@ -163,7 +163,7 @@ nav .navBtn:hover b a {
   
 }
 
-@media (max-width: 700px) {  
+@media (max-width: 767px) {  
   .main1 .read strong {
     border: 2px solid #fff;
     border-radius: 5px;
@@ -183,13 +183,11 @@ nav .navBtn:hover b a {
     margin: 0 0 0 100px;
   }
   .main1 .forB p {
-    font-family: "Mate SC", serif;
+    
     font-size: 25px;
     color: rgb(175, 169, 169);
   }
-  .main1 .forB p .span1 {
-    font-family: "ZCOOL KuaiLe", cursive;
-    color: red;
+  .main1 .forB p .span1 {    
     margin: 0 0 0 150px;
   }
   

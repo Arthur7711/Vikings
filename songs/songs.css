@@ -93,19 +93,19 @@ main .song h3 {
   color: blanchedalmond;
   display: flex;
 }
-@media (max-width: 1300px) {
+@media (max-width: 1440px) {
   main .song iframe {
     max-width: 400px;
     max-height: 300px;
   }
 }
-@media (max-width: 1000px) {
+@media (max-width: 1024px) {
   main .song iframe {
     max-width: 300px;
     max-height: 240px;
   }
 }
-@media (max-width: 775px) {
+@media (max-width: 768px) {
   main {
     display: grid;
     grid-template-columns: 100%;
