@@ -92,6 +92,11 @@ main .game {
   padding: 10px;
   border: 2px solid rgb(61, 60, 60);
   cursor: pointer;
+  transition: all 0.5s 0s ease-out;
+  transition: 0.5s;
+}
+main .game img {
+  transition: 0.5s;
 }
 main .game a {
   text-decoration: none;
@@ -99,15 +104,9 @@ main .game a {
 }
 main .game:hover {
   box-shadow: 0 0 20px 20px #fff;
-  transition: 0.5s;
 }
 main .game:hover img {
   width: 310px;
   height: 260px;
-  transition: 0.5s;
 }
-/* main .game::after img {
-  width: 300px;
-  height: 250px;
-  transition: 0.7s;
-} */
+
