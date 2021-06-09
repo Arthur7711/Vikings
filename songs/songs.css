@@ -87,9 +87,34 @@ main {
   grid-template-columns: 6fr 6fr;
 }
 main .song {
-  margin: 5%;
+  margin: 5% 5% 5% 2%;
 }
 main .song h3 {
   color: blanchedalmond;
   display: flex;
+}
+@media (max-width: 1300px) {
+  main .song iframe {
+    max-width: 400px;
+    max-height: 300px;
+  }
+}
+@media (max-width: 1000px) {
+  main .song iframe {
+    max-width: 300px;
+    max-height: 240px;
+  }
+}
+@media (max-width: 775px) {
+  main {
+    display: grid;
+    grid-template-columns: 100%;
+  }
+  main .song{
+    margin:0 15% 0 15%;
+  }
+  main .song iframe {
+    max-width: 400px;
+    max-height: 300px;
+  }
 }

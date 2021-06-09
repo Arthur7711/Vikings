@@ -109,4 +109,15 @@ main .game:hover img {
   width: 310px;
   height: 260px;
 }
-
+@media (max-width: 1400px) {
+  main {
+    display: grid;
+    grid-template-columns: 50% 50%;
+  }
+}
+@media (max-width: 765px) {
+  main {
+    display: grid;
+    grid-template-columns: 100%;
+  }
+}
