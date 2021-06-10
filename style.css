@@ -55,6 +55,9 @@ header .headBtn:hover {
 header .headBtn:hover b a {
   color: black;
 }
+header .hideElem {
+  display: none;
+}
 nav {
   grid-area: n;
   background-color: black;
@@ -147,7 +150,7 @@ nav .navBtn:hover b a {
   color: red;
 }
 
-@media (max-width: 1024px) {  
+@media (max-width: 1024px) {
   .main1 .read strong {
     border: 2px solid #fff;
     border-radius: 5px;
@@ -160,10 +163,9 @@ nav .navBtn:hover b a {
     color: #fff;
     transition: 0.5s;
   }
-  
 }
 
-@media (max-width: 767px) {  
+@media (max-width: 767px) {
   .main1 .read strong {
     border: 2px solid #fff;
     border-radius: 5px;
@@ -183,12 +185,10 @@ nav .navBtn:hover b a {
     margin: 0 0 0 100px;
   }
   .main1 .forB p {
-    
     font-size: 25px;
     color: rgb(175, 169, 169);
   }
-  .main1 .forB p .span1 {    
+  .main1 .forB p .span1 {
     margin: 0 0 0 150px;
   }
-  
 }

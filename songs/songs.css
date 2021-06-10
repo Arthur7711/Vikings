@@ -55,6 +55,9 @@ header .headBtn:hover b a {
   color: black;
   transition: 0.5s;
 }
+header .hideElem {
+  display: none;
+}
 nav {
   grid-area: n;
   background-color: black;
@@ -117,4 +120,12 @@ main .song h3 {
     max-width: 400px;
     max-height: 300px;
   }
+}
+@media (max-width:700px) {
+  header .headBtn{
+    display: none;
+  }
+  /* header .hideElem{
+
+  } */
 }

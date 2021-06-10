@@ -55,6 +55,9 @@ header .headBtn:hover {
 header .headBtn:hover b a {
   color: black;
 }
+header .hideElem {
+  display: none;
+}
 nav {
   grid-area: n;
   background-color: black;
