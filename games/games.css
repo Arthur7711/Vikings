@@ -1,87 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=ZCOOL+KuaiLe&display=Mate+SC&display=swap");
 
-* {
-  margin: 0;
-  padding: 0;
-}
-body {
-  display: grid;
-  grid-template-areas:
-    "h h"
-    "n m";
-  grid-template-rows: 65px 1fr;
-  grid-template-columns: 2fr 10fr;
-  grid-gap: 10px;
-}
-
-header {
-  grid-area: h;
-  background-color: black;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
-header .logo {
-  cursor: pointer;
-}
-header .headBtn {
-  border-radius: 5px;
-  padding: 3px;
-  cursor: pointer;
-}
-
-header .headBtn b a {
-  text-decoration: none;
-  font-size: 20px;
-  color: #fff;
-}
-header .search {
-  display: grid;
-  grid-template-columns: 93% 7%;
-}
-header .search input {
-  height: 25px;
-  border-radius: 5px;
-}
-header .search img {
-  margin-top: 5px;
-  cursor: pointer;
-}
-header .headBtn:hover {
-  background-color: white;
-  transition: 0.5s;
-}
-header .headBtn:hover b a {
-  color: black;
-  transition: 0.5s;
-}
-header .hideElem {
-  display: none;
-}
-nav {
-  grid-area: n;
-  background-color: black;
-  min-height: 90vh;
-}
-
-nav .navBtn {
-  margin-top: 15px;
-  padding: 3px 0 0 10px;
-  cursor: pointer;
-}
-nav .navBtn b a {
-  text-decoration: none;
-  font-size: 25px;
-  color: white;
-}
-nav .navBtn:hover {
-  background-color: white;
-  transition: 0.5s;
-}
-nav .navBtn:hover b a {
-  color: black;
-  transition: 0.5s;
-}
 main {
   grid-area: m;
   display: grid;
@@ -131,15 +48,6 @@ main .game:hover img {
 }
 
 @media (max-width:650px) {
-  header .headBtn{
-    display: none;
-  }
-  header .hideElem{
-    display: revert;
-  }
-  header .search{
-    height: 15px;
-  }
   .game img{
     width:250px;
     height: 250px;
@@ -147,35 +55,13 @@ main .game:hover img {
 }
 
 @media (max-width:400px) {
-  header .headBtn{
-    display: none;
-  }
-  header .hideElem{
-    display: revert;
-  }
-  header .search{
-    height: 12px;
-  }
   .game img{
     width:200px;
     height: 200px;
   }    
 }
 
-@media (max-width:350px) {
-  header .headBtn{
-    display: none;
-  }
-  header .hideElem{
-    display: revert;
-    width: 25px;
-  }
-  header .search input{
-    display: none;
-  }    
-  header .logo a img{
-    width: 50px;
-  }  
+@media (max-width:350px) {  
   .game img{
     width:180px;
     height: 180px;
