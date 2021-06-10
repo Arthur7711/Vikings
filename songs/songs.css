@@ -132,6 +132,17 @@ main .song h3 {
     header .search{
       height: 15px;
     }
+    main {
+      display: grid;
+      grid-template-columns: 100%;
+    }
+    main .song{
+      margin:0 15% 0 15%;
+    }
+    main .song iframe {
+      max-width: 300px;
+      max-height: 250px;
+    }
   }
   
   @media (max-width:400px) {
@@ -143,7 +154,18 @@ main .song h3 {
     }
     header .search{
       height: 12px;
-    }     
+    }   
+    main {
+      display: grid;
+      grid-template-columns: 100%;
+    }
+    main .song{
+      margin:0 15% 0 15%;
+    }
+    main .song iframe {
+      max-width: 200px;
+      max-height: 170px;
+    }  
   }
   
   @media (max-width:350px) {
@@ -160,4 +182,5 @@ main .song h3 {
     header .logo a img{
       width: 50px;
     }  
+    
   }
