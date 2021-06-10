@@ -99,9 +99,52 @@ main img {
   transition: 1s;
 }
 
-main img:hover {
-  height: 500px;
-  width: 500px;
-  opacity: 1;
+@media (min-width:768px) {
+  main img:hover {
+    height: 500px;
+    width: 500px;
+    opacity: 1;
+  }
+}
+
+@media (max-width:650px) {
+  header .headBtn{
+    display: none;
+  }
+  header .hideElem{
+    display: revert;
+  }
+  header .search{
+    height: 15px;
+  }
+  
+}
+
+@media (max-width:400px) {
+  header .headBtn{
+    display: none;
+  }
+  header .hideElem{
+    display: revert;
+  }
+  header .search{
+    height: 12px;
+  }    
+}
+
+@media (max-width:350px) {
+  header .headBtn{
+    display: none;
+  }
+  header .hideElem{
+    display: revert;
+    width: 25px;
+  }
+  header .search input{
+    display: none;
+  }    
+  header .logo a img{
+    width: 50px;
+  }  
   
 }
