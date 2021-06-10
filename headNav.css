@@ -82,3 +82,42 @@ nav .navBtn:hover b a {
   color: black;
   transition: 0.5s;
 }
+@media (max-width:650px) {
+    header .headBtn{
+      display: none;
+    }
+    header .hideElem{
+      display: revert;
+    }
+    header .search{
+      height: 15px;
+    }
+  }
+  
+  @media (max-width:400px) {
+    header .headBtn{
+      display: none;
+    }
+    header .hideElem{
+      display: revert;
+    }
+    header .search{
+      height: 12px;
+    }     
+  }
+  
+  @media (max-width:350px) {
+    header .headBtn{
+      display: none;
+    }
+    header .hideElem{
+      display: revert;
+      width: 25px;
+    }
+    header .search input{
+      display: none;
+    }    
+    header .logo a img{
+      width: 50px;
+    }  
+  }
