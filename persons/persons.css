@@ -1,4 +1,3 @@
-
 .container {
   grid-area: m;
   background-color: black;
@@ -20,6 +19,8 @@
   box-shadow: inset 300px 0 50px rgba(0, 0, 0, 0.5);
   cursor: pointer;
 }
+
+/* for rotating -10deg */
 .card:hover {
   z-index: 1000;
   transform: perspective(2000px) rotate(-10deg);
@@ -35,6 +36,7 @@
   z-index: 1;
   transition: 1s;
 }
+/* for opening card */
 .card:hover .imgBox {
   transform: rotateY(-135deg);
 }
@@ -53,4 +55,3 @@
   box-sizing: border-box;
   padding: 20px;
 }
-
