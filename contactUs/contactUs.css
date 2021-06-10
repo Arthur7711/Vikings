@@ -62,7 +62,6 @@ nav {
   grid-area: n;
   background-color: black;
   min-height: 90vh;
-  display: table;
 }
 
 nav .navBtn {
