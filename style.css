@@ -1,4 +1,3 @@
-
 .main1 {
   height: 90vh;
   grid-area: m;
@@ -90,15 +89,9 @@
     margin: 0 0 0 150px;
   }
 }
-@media (max-width:650px) {
-  header .headBtn{
-    display: none;
-  }
-  header .hideElem{
-    display: revert;
-  }
-  header .search{
-    height: 15px;
+@media (max-width: 650px) {
+  .main1 {
+    background-image: url(img/small.jpg);
   }
   .main1 .forB {
     margin: 50px 0 0 30px;
@@ -119,26 +112,17 @@
   .main1 .read {
     margin: 0 auto;
   }
-  .main1 .read strong {    
+  .main1 .read strong {
     padding: 5px;
   }
   .main1 .read strong a {
-    font-size: 15px;    
-  }  
+    font-size: 15px;
+  }
 }
 
-@media (max-width:400px) {
-  header .headBtn{
-    display: none;
-  }
-  header .hideElem{
-    display: revert;
-  }
-  header .search{
-    height: 12px;
-  }
+@media (max-width: 400px) {
   .main1 .forB {
-    margin:10px 0 0 0;
+    margin: 10px 0 0 0;
   }
   .main1 .forB .spn {
     margin: 10px 0 0 10px;
@@ -154,29 +138,19 @@
     margin: 10px 0 0 20px;
   }
   .main1 .read {
-    margin: 50% 0 0 0 ;
+    margin: 50% 0 0 0;
   }
-  .main1 .read strong {    
+  .main1 .read strong {
     padding: 5px;
   }
   .main1 .read strong a {
-    font-size: 15px;    
-  }  
+    font-size: 15px;
+  }
 }
 
-@media (max-width:350px) {
-  header .headBtn{
-    display: none;
-  }
-  header .hideElem{
-    display: revert;
-    width: 25px;
-  }
-  header .search input{
-    display: none;
-  }
+@media (max-width: 350px) {
   .main1 .forB {
-    margin:10px 0 0 0;
+    margin: 10px 0 0 0;
   }
   .main1 .forB .spn {
     margin: 10px 0 0 10px;
@@ -192,15 +166,12 @@
     margin: 10px 0 0 20px;
   }
   .main1 .read {
-    margin: 50% 0 0 0 ;
+    margin: 50% 0 0 0;
   }
-  .main1 .read strong {    
+  .main1 .read strong {
     padding: 5px;
   }
   .main1 .read strong a {
-    font-size: 15px;    
+    font-size: 15px;
   }
-  header .logo a img{
-    width: 50px;
-  }  
 }
