@@ -129,3 +129,55 @@ main .game:hover img {
     grid-template-columns: 100%;
   }
 }
+
+@media (max-width:650px) {
+  header .headBtn{
+    display: none;
+  }
+  header .hideElem{
+    display: revert;
+  }
+  header .search{
+    height: 15px;
+  }
+  .game img{
+    width:250px;
+    height: 250px;
+  }
+}
+
+@media (max-width:400px) {
+  header .headBtn{
+    display: none;
+  }
+  header .hideElem{
+    display: revert;
+  }
+  header .search{
+    height: 12px;
+  }
+  .game img{
+    width:200px;
+    height: 200px;
+  }    
+}
+
+@media (max-width:350px) {
+  header .headBtn{
+    display: none;
+  }
+  header .hideElem{
+    display: revert;
+    width: 25px;
+  }
+  header .search input{
+    display: none;
+  }    
+  header .logo a img{
+    width: 50px;
+  }  
+  .game img{
+    width:180px;
+    height: 180px;
+  }
+}
