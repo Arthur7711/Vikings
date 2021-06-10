@@ -107,16 +107,68 @@ main p {
 }
 @media (max-width:1440px) {
   main .valh img{
-    max-width: 800px;
+    max-width: 1000px;
   }
 }
 @media (max-width:1024px) {
   main .valh img{
-    max-width: 700px;
+    max-width: 750px;
   }
 }
 @media (max-width:768px) {
   main .valh img{
     max-width: 600px;
+  }
+}
+@media (max-width: 650px) {
+  header .headBtn {
+    display: none;
+  }
+  header .hideElem {
+    display: revert;
+  }
+  header .search {
+    height: 15px;
+  }
+  main .valh img{
+    max-width: 500px;
+  }
+}
+
+@media (max-width: 400px) {
+  header .headBtn {
+    display: none;
+  }
+  header .hideElem {
+    display: revert;
+  }
+  header .search {
+    height: 12px;
+  }
+  main .inp{    
+      min-width: 200px;    
+  }
+  main .valh img{
+    max-width: 300px;
+  }
+  
+}
+
+@media (max-width: 350px) {
+  header .headBtn {
+    display: none;
+  }
+  header .hideElem {
+    display: revert;
+    width: 25px;
+  }
+  header .search input {
+    display: none;
+  }
+  header .logo a img {
+    width: 50px;
+  }
+  main .valh img{
+    max-width: 250px;
   }
 }
