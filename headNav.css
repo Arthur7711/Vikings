@@ -16,108 +16,110 @@ body {
 
 header {
   grid-area: h;
+}
+header nav {
   background-color: black;
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
-header .logo {
+header nav .logo {
   cursor: pointer;
 }
-header .headBtn {
+header nav .headBtn {
   border-radius: 5px;
   padding: 3px;
   cursor: pointer;
   transition: 0.5s;
 }
 
-header .headBtn b a {
+header nav .headBtn b a {
   text-decoration: none;
   font-size: 20px;
   color: #fff;
   transition: 0.5s;
 }
-header .search {
+header nav .search {
   display: grid;
   grid-template-columns: 93% 7%;
 }
-header .search input {
+header nav .search input {
   height: 25px;
   border-radius: 5px;
 }
-header .search img {
+header nav .search img {
   margin-top: 5px;
   cursor: pointer;
 }
-header .headBtn:hover {
+header nav .headBtn:hover {
   background-color: white;
 }
-header .headBtn:hover b a {
+header nav .headBtn:hover b a {
   color: black;
 }
-header .hideElem {
+header nav .hideElem {
   display: none;
 }
-nav {
+.navigation {
   grid-area: n;
   background-color: black;
   min-height: 90vh;
 }
 
-nav .navBtn {
+.navigation .navBtn {
   margin-top: 15px;
   padding: 3px 0 0 10px;
   cursor: pointer;
 }
-nav .navBtn b a {
+.navigation .navBtn b a {
   text-decoration: none;
   font-size: 25px;
   color: white;
 }
-nav .navBtn:hover {
+.navigation .navBtn:hover {
   background-color: white;
   transition: 0.5s;
 }
-nav .navBtn:hover b a {
+.navigation .navBtn:hover b a {
   color: black;
   transition: 0.5s;
 }
-@media (max-width:650px) {
-    header .headBtn{
-      display: none;
-    }
-    header .hideElem{
-      display: revert;
-    }
-    header .search{
-      height: 15px;
-    }
+@media (max-width: 650px) {
+  header nav .headBtn {
+    display: none;
   }
-  
-  @media (max-width:400px) {
-    header .headBtn{
-      display: none;
-    }
-    header .hideElem{
-      display: revert;
-    }
-    header .search{
-      height: 12px;
-    }     
+  header nav .hideElem {
+    display: revert;
   }
-  
-  @media (max-width:350px) {
-    header .headBtn{
-      display: none;
-    }
-    header .hideElem{
-      display: revert;
-      width: 25px;
-    }
-    header .search input{
-      display: none;
-    }    
-    header .logo a img{
-      width: 50px;
-    }  
+  header nav .search {
+    height: 15px;
   }
+}
+
+@media (max-width: 400px) {
+  header nav .headBtn {
+    display: none;
+  }
+  header nav .hideElem {
+    display: revert;
+  }
+  header nav .search {
+    height: 12px;
+  }
+}
+
+@media (max-width: 350px) {
+  header nav .headBtn {
+    display: none;
+  }
+  header nav .hideElem {
+    display: revert;
+    width: 25px;
+  }
+  header nav .search input {
+    display: none;
+  }
+  header nav .logo a img {
+    width: 50px;
+  }
+}
