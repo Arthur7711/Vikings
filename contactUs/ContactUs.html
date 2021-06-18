@@ -71,33 +71,32 @@
 				<a href="../games/games.html">Games</a>
 			</b>
 		</div>
-		<audio autoplay>
-			<source src="../audio/Vikings war song .mp3" type="audio/mp3">			
-		</audio>
+		
 	</nav>
     <main>
-        <form action="/action_page.php">
-            <label >Your name:
-            <input class="inp" type="text"  name="yourName" ></label><br><br/>
-            <label >Your email:
-            <input class="inp" type="text"  name="email" ></label><br><br>            
+        <form action="">
+            <label >
+            <input required placeholder="Your name:" class="inp" type="text" id='str'  name="yourName" ></label><br><br/>
+            <label >
+            <input required class="inp" type="text" placeholder="Your email:" id="mail"  name="email" ></label><br><br>            
             <label>
                 <b>
                     Male: 
                 </b>
-                <input type="radio" id="male" name="gender"  />
+                <input required type="radio" id="male" name="gender"  />
             </label>&nbsp; &nbsp; &nbsp;
             <label>
                 <b>
                     Female:
                 </b>
-                <input id="female" type="radio" name="gender"  />
+                <input required id="female" type="radio" name="gender"  />
             </label><br/><br/>
             <label>
-                <textarea name="comment" placeholder="please write your comment" id="" cols="28" rows="10"></textarea>
+                <textarea required name="comment" placeholder="please write your comment" id="" cols="28" rows="10"></textarea>
             </label><br/><br/>
-            <button type="submit"><b>Submit</b></button>
+            <button id="btn" ><b>Submit</b></button>
         </form>
     </main>
+	
 </body>
 </html>
