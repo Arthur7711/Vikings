@@ -15,6 +15,7 @@ body {
 }
 
 header {
+  background-color: black;
   grid-area: h;
 }
 header nav {
